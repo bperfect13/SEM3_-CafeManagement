@@ -17,7 +17,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class loginandsignup {
+public class LoginPage {
     private Stage stage;
     private Scene scene;
 
@@ -32,7 +32,14 @@ public class loginandsignup {
         Stage stage = (Stage) cancelButton.getScene().getWindow();
         stage.close();
     }
-
+    @FXML
+    void SignupAction(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Signup_page.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
     public void LoginAction(ActionEvent event) {
         String username = UserField.getText();
         String password = PassField.getText();
