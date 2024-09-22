@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUp">
+   <children>
+      <Label layoutX="52.0" layoutY="62.0" text="Sign Up ">
+         <font>
+            <Font name="Bell MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="134.0" text="Email" />
+      <Label layoutX="68.0" layoutY="220.0" text="Username" />
+      <TextField layoutX="132.0" layoutY="130.0" promptText="email" />
+      <TextField fx:id="usernameTextField" layoutX="132.0" layoutY="216.0" promptText="username" />
+      <PasswordField fx:id="passwordTextField" layoutX="433.0" layoutY="105.0" promptText="Npassword" />
+      <PasswordField layoutX="433.0" layoutY="155.0" promptText="Cpassword" />
+      <DatePicker fx:id="dateOfBirthDatePicker" layoutX="415.0" layoutY="225.0" promptText="DOB" />
+      <TextField fx:id="firstNameTextField" layoutX="125.0" layoutY="262.0" promptText="Fname" />
+      <TextField fx:id="lastNameTextField" layoutX="125.0" layoutY="302.0" promptText="Lname" />
+      <Button fx:id="loginpageButton" layoutX="381.0" layoutY="302.0" mnemonicParsing="false" onAction="#OpenLoginPage" text="Login" />
+      <Button fx:id="SignupButton" layoutX="476.0" layoutY="302.0" mnemonicParsing="false" onAction="#SignupAction" text="Signup" />
+   </children>
+</AnchorPane>

@@ -34,7 +34,7 @@ public class LoginPage {
     }
     @FXML
     void SignupAction(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Signup_page.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("D_signup.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -59,7 +59,7 @@ public class LoginPage {
                     preparedStatement.setString(2, password);
                     try (ResultSet resultSet = preparedStatement.executeQuery()) {
                         if (resultSet.next()) {
-                            Parent root = FXMLLoader.load(getClass().getResource("Dashboard_try.fxml"));
+                            Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
                             stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                             scene = new Scene(root);
                             stage.setScene(scene);

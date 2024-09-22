@@ -50,7 +50,7 @@ public class SignUp implements Initializable {
 
     @FXML
     private void OpenLoginPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login_page.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -84,7 +84,7 @@ public class SignUp implements Initializable {
 
                     int rowsAffected = preparedStatement.executeUpdate();
                     if (rowsAffected > 0) {
-                        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+                        Parent root = FXMLLoader.load(getClass().getResource("login_page.fxml"));
                         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                         scene = new Scene(root);
                         stage.setScene(scene);

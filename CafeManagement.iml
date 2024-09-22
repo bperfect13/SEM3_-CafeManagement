@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="mysql-connector-j-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="javafx" level="project" />
+    <orderEntry type="library" name="jrt-fs" level="project" />
   </component>
 </module>
